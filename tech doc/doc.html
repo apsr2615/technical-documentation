@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="doc.css">
+        <title>Python Documentation Page</title>
+      </head>
+      <body>
+        <nav id="navbar">
+         <header> <h1>Python Documentation</h1></header>
+          <ul>
+            <li><a href="#INTRODUCTION" class="nav-link">Introduction</a></li>
+            <li><a href="#Hello_World!" class="nav-link">Hello World!</a></li>
+    
+             <li><a href="#Variables_and_Data_Types" class="nav-link">Variables and Data Types</a></li>
+             <li><a href="#Basic_Operators" class="nav-link">Basic Operators</a></li>
+             <li><a href="#Control_Structures" class="nav-link">Control Structures</a></li>
+             <li><a href="#Functions" class="nav-link">Functions</a></li>
+             <li><a href="#Lists_Tuples_and_Dictionaries" class="nav-link">Lists Tuples and Dictionaries</a></li>
+             <li><a href="#Exception_Handling" class="nav-link">Exception Handling</a></li>
+             <li><a href="#File_Handling" class="nav-link">File Handling</a></li>
+             
+             
+          </ul>
+        </nav>
+    
+    
+    
+        <main id="main-doc">
+          <section class="main-section" id="INTRODUCTION">
+            <h3>INTRODUCTION</h3>
+              <p>Python is a versatile, high-level programming language known for its readability and simplicity. DEVOLOPED BY GUIDO VAN ROSSUM and first released in 1991, Python is designed to emphasize code readability and developer productivity. Its straightforward syntax makes it beginner-friendly, while its powerful libraries and frameworks make it a top choice for professionals in various fields.</p>
+             
+          
+    
+          </section>
+          <section class="main-section" id="Hello_World!">
+              <h3>Hello World!</h3>
+    
+               <p>The first program usually starts with printing "Hello, World!" on the screen.</p>
+                <div><code>print("Hello, World!")
+    </code></div>
+             
+    
+            </section> 
+      <section class="main-section" id="Variables_and_Data_Types">
+           <h3>Variables and Data Types</h3>
+           <p>Python supports various data types, including integers, floats, strings, and booleans.</p>
+           <div>
+             <code># Integer
+    x = 10<br>
+    
+    # Float
+    y = 3.14<br>
+    
+    # String
+    name = "Alice"<br>
+    
+    # Boolean
+    is_active = True<br>
+    </code>
+           </div>
+         
+    
+        </section>       
+            <section class="main-section" id="Basic_Operators">
+                 <h3>Basic Operators</h3>
+                 <ul>
+                   <li>Arithmetic Operators: +, -, *, /, ** (power), % (modulus).</li>
+                    <li>Comparison Operators: ==, !=, <, >, <=, >=.</li>
+                     <li>Logical Operators: and, or, not.</li>
+                 </ul>
+                 <div>
+                   <code>a = 5<br>
+    b = 3<br>
+    
+    # Arithmetic<br>
+    sum_ab = a + b        # 8<br>
+    power = a ** b        # 125<br>
+    
+    # Comparison<br>
+    is_equal = (a == b)   # False<br>
+    
+    # Logical<br>
+    result = (a > b) and (b < 10)  # True<br>
+    </code>
+                 </div>
+               
+    
+            </section>
+          <section class="main-section" id="Control_Structures">
+            
+               <h3>Control Structures</h3>
+          
+               <p>Conditional Statements</p>
+               <div>
+                 <code>age = 18<br>
+    
+    if age >= 18:<br>
+        print("You are an adult.")<br>
+    elif age >= 13:<br>
+        print("You are a teenager.")<br>
+    else:<br>
+        print("You are a child.")<br>
+    </code>
+               </div>
+               <p>loops</p>
+               <ul>
+                 <li>For Loop: Iterate over a sequence.</li>
+                 <li>While Loop: Repeat as long as a condition is true.</li>
+               </ul>
+               <div>
+                 <code># For loop<br>
+    for i in range(5):<br>
+        print(i)  # Prints 0 to 4<br>
+    
+    # While loop<br>
+    count = 0<br>
+    while count < 5:<br>
+        print(count)<br>
+        count += 1<br>
+    </code>
+               </div>
+             
+    
+          </section>
+          <section class="main-section" id="Functions">
+            
+              <h3>Functions</h3> 
+              <p>Functions help you encapsulate code for reuse.</p>
+              <div>
+                <code>def greet(name):<br>
+        return f"Hello, {name}!"<br>
+    
+    print(greet("Alice"))  # Output: Hello, Alice!<br>
+    </code>
+              </div>
+    
+    
+            </section>
+            <section class="main-section" id="Lists_Tuples_and_Dictionaries">
+            
+              <header>Lists Tuples and Dictionaries</header>
+              <p>Lists:</p>
+               <p>A list is an ordered collection that is mutable.</p>
+               <div>
+                 <code>fruits = ["apple", "banana", "cherry"]<br>
+    fruits.append("orange")<br>
+    print(fruits[1])  # Output: banana<br>
+    </code>
+               </div>
+               <p>Tuples:</p>
+               <p>A tuple is an ordered, immutable collection.</p>
+               <div>
+                 <code>point = (3, 5)<br>
+    print(point[0])  # Output: 3<br>
+    </code>
+               </div>
+               <p>Dictionaries:</p>
+               <p>A dictionary is a collection of key-value pairs</p>
+               <div>
+                 <code>person = {"name": "Alice", "age": 25}<br>
+    print(person["name"])  # Output: Alice<br>
+    </code>
+               </div>
+              
+          
+    
+            </section>
+            <section class="main-section" id="Exception_Handling">
+              <h3>Exception Handling</h3>
+              <p>Use try, except to handle errors gracefully.</p>
+              <div>
+                <code>try:<br>
+        result = 10 / 0<br>
+    except ZeroDivisionError:<br>
+        print("Cannot divide by zero!")<br>
+    </code>
+              </div>
+            </section>
+    
+            <section class="main-section" id="File_Handling">
+              <h3>File Handling</h3>
+              <p>You can read from and write to files.</p>
+              <div>
+                <code># Writing to a file
+    with open("example.txt", "w") as f:<br>
+        f.write("Hello, world!")<br>
+    
+    # Reading from a file<br>
+    with open("example.txt", "r") as f:<br>
+        content = f.read()<br>
+        print(content)<br>
+    </code>
+              </div>
+            </section>
+            
+          <h5>If you are hunger to learn about this more 
+          <a href="https://www.w3schools.com/python/python_intro.asp">click here</a></h5>
+      
+            
+            
+    
+        </main>
+        
+      </body>
+      <html>
